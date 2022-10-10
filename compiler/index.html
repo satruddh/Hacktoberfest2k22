@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header title">&#123;YourCode.<span id="ide">IDE</span>&#125;</div>
+    <div class="control-panel">
+        <div class="fnt">Font Size&nbsp;:&nbsp;
+            <select id="fnt-size">
+                <option value="12px">12 px</option>
+                <option value="14px">14 px</option>
+                <option value="16px">16 px</option>
+                <option value="20px">20 px</option>
+
+            </select>
+        </div>
+        <div class="language-selection">
+            Select Language :
+            &nbsp;&nbsp;
+            <select id="languages" class="languages">
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+                <option value="python">Python</option>
+                <option value="js">JavaScript</option>
+            </select>
+        </div>
+    </div>
+    <div id="editor" class="editor"></div>
+    <div class="output"></div>
+    <div class="button-container">
+        <button class="btn">Run</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.7.1/ace.js"
+    integrity="sha512-FKkEO4RZEQjFmU1hoUYdx6HJLdpHpNzgWspgnQCxx7OOkDVz4kiGJxR97yWc5bzjwcCpJC/CRCiQzuoGYAChhQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>

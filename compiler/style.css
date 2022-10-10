@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+body{
+    height: 720px;
+    background-color: lightgrey;
+}
+.header{
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Roboto',sans-serif;
+    font-weight : 400;
+    padding: 4px;
+}
+
+#fnt-size{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-family: 'Source Code Pro', monospace;
+}
+#ide {
+    font-style: italic;
+}
+
+.control-panel {
+    background: lightgrey;
+    text-align: right;
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.languages {
+    background: white;
+    border: 1px solid grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#editor {
+    height: 400px;
+    font-size: 12px;
+    font-family: monospace;
+    border-left: 10px solid lightgrey;
+    padding: 4px;
+    border-right: 10px solid lightgrey;
+}
+
+.button-container {
+    text-align : right;
+    padding : 4px;
+    border-right: 10px solid lightgray;
+}
+
+.btn {
+    background-color: lawngreen;
+    color: snow;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    width: 80px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+.output {
+    padding: 4px;
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: snow;
+    min-height: 180px;
+    resize: none;
+    border-left: 10px solid lightgrey;
+    border-right: 10px solid lightgray;
+}
+.fnt {
+    display: inline-block;
+}
+.language-selection {
+    display: inline-block;
+}
