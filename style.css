@@ -1,0 +1,148 @@
+/* body
+{
+  background-color: rgb(248, 163, 51);
+  font-family: sans-serif;
+} */
+
+h1
+{
+  font-size: 2vw;
+}
+
+p
+{
+  font-size: 1vw;
+}
+
+input
+{
+  border-radius: 3px;
+}
+
+#firstHead
+{
+  background-color: teal;
+  color: white;
+  width: 100%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  font-size: 3vw;
+}
+
+.container
+{
+  display: flex;
+  height: 100%;
+}
+
+.twoBox
+{
+  width: 50%;
+  height: 100%;
+  border: 1px whitesmoke solid;
+  padding: 2%;
+  /* overflow: scroll; */
+}
+
+#newQuestionForm
+{
+  color: white;
+  background-color: #0069d9;
+  padding: 6px;
+  margin-right: 1vw;
+  border-radius: 7px;
+}
+
+#questionSearch
+{
+  padding:5px;
+}
+
+#dataList
+{
+  overflow: auto;
+  height: 60vh;
+}
+
+#rightDiv
+{
+  width: 100%;
+  margin : 2px 2px 2px 2px;
+}
+
+#subject
+{
+  width: 10vw;
+}
+
+#question
+{
+  height: 22vh;
+  width: 45vw;
+}
+
+#submitBtn
+{
+  background-color: #0069d9;
+  color: white;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+#holder
+{
+  display: block;
+  /* background-color:#4096cf; */
+  /* color: white; */
+  padding-left: 4px;
+  /* border: 1px solid #E3B23D; */
+  border-radius: 10px;
+  text-align: left;
+}
+
+#pickComment
+{
+  height: 22vh;
+  width: 45vw;
+  margin-top: 2px;
+}
+
+#commentBtn
+{
+  background-color: #0069d9;
+  float: right;
+  color: white;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+#respondAns
+{
+  overflow: auto;
+  height: 15vh;
+  margin-bottom: 1vh;
+}
+
+#comments
+{
+  background-color: rgb(252, 239, 182);
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+#resolveHolder
+{
+  display: none;
+  height: 7vh;
+  margin-bottom: 2vh;
+}
+
+
+#resolveBtn
+{
+  background-color: #0069d9;
+  float: right;
+  color: white;
+  padding: 6px;
+  border-radius: 7px;
+}
