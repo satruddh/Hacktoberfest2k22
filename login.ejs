@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header> <%- include("partials/header",{
+        log:0
+    })%> </header>
+    <div class="container">
+        <% if(token && loginErr){ %>
+
+            <form action="/login" method="post">
+                <h2>Login</h2>
+                <label for="username">Username</label>
+                <input id="username" name="username" placeholder="Username" type="text" required>
+                <label for="password">Password</label>
+                <input id="password" name="password" placeholder="Password" type="password" required>
+                <input type="submit" value="Log In">
+                <span>Don't have an account? <a href="/signup">Signup</a></span>
+                <div class="extra"><h2>!!!Username or Password is incorrect!!!</h2></div>
+            </form>
+
+        <%  } else if(token ){ %>
+            <form action="/login" method="post">
+                <h2>Login</h2>
+                <label for="username">Username</label>
+                <input id="username" name="username" placeholder="Username" type="text" required>
+                <label for="password">Password</label>
+                <input id="password" name="password" placeholder="Password" type="password" required>
+                <input type="submit" value="Log In">
+                <span>Don't have an account? <a href="/signup">Signup</a></span>
+                
+            </form>
+            
+        <% } else { %>
+
+            <% if(signupErr){ %>
+                <form action="/signup" method="post">
+                    <h2>Signup</h2>
+                    <label for="username">Username</label>
+                    <input id="username" name="username" placeholder="Username" type="text" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" placeholder="Password" type="password" required>
+                    <input type="submit" value="Sign Up">
+                    <span>Already Registered? <a href="/login">Login</a></span>
+                    <div class="extra"><h2>!!!Something went wrong!!!</h2></div>
+                </form>
+                
+            <% } else {  %>    
+            
+            
+                <form action="/signup" method="post">
+                    <h2>Signup</h2>
+                    <label for="username">Username</label>
+                    <input id="username" name="username" placeholder="Username" type="text" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" placeholder="Password" type="password" required>
+                    <input type="submit" value="Sign Up">
+                    <span>Already Registered? <a href="/login">Login</a></span>
+                </form>
+
+            <% } %>
+       <% } %>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
+
