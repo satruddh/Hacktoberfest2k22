@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>Discussion Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1 id="firstHead">Discussion Portal</h1>
+  <div class="container">
+    <div class="twoBox" style="background-color:rgb(226, 225, 222);">
+      <div>
+        <button id="newQuestionForm">New Question form</button>
+        <input type="search" placeholder="search questions..." id="questionSearch"/>
+      </div>
+      <div id="dataList">
+      </div>
+    </div>
+    <div class="twoBox" style="display:block" id="rightContainer">
+      <div id="toggleDisplay">
+          <h1>Welcome to Discussion Portal !</h1>
+          <p>Enter a subject and question to get started</p>
+          <div id="rightDiv">
+            <input type="text" id="subject" placeholder="Subject"/>
+          </div>
+          <div id="rightDiv" >
+            <textarea id="question" placeholder="Write your query description here..."></textarea>
+          </div>
+          <div style="float:right;">
+            <button type="submit" id="submitBtn">Submit</button>
+          </div>
+      </div>
+      <div id="respondQue">
+      </div>
+      <div id="resolveHolder">
+        <button id="resolveQuestion">Resolve</button>
+        <button id="upvote">upvote</button>
+        <button id="downvote">downvote</button>
+      </div>
+      <div id="respondAns">
+      </div>
+      <div id="commentHolder" style="display:none">
+        <input id="pickName" placeholder="Name Please..."/>
+        <textarea id="pickComment" placeholder="Please write your answer here..."></textarea>
+        <button id="commentBtn">Comment</button>
+      </div>
+    </div>
+  </div> 
+</body>
+<script src="script.js"></script>
+</html>
