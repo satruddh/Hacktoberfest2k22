@@ -1,0 +1,2 @@
+- This is a forum type application where users post their queries and other users can respond to the queries.
+- Also users can vote the responses to the queries.
