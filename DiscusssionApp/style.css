@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width : 800px){
+    #newQuestionFormBtn{
+        display: block;
+        width: 100%;
+        margin: 1vh 0vh;
+        padding: 5px;
+    }
+    .leftPaneHeader{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #srchQuestion{
+        display: block;
+        width: 99% !important;
+        margin-top: 1vh 0vh;
+    }
+
+    .rightPane{
+        margin-top: 10px;
+        border-top: 1vh solid rgba(226,226,226,0.8);
+    }
+
+    .voteControls {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 99%;
+}
+.header {
+    background-color: rgb(0,128,128);
+    color : white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display : flex;
+    height : 100%;
+}
+.leftPane {
+    flex : 1;
+    border-right: 0.2px solid gray;
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.leftPaneHeader {
+    align-items: center;
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.questionsList{
+    background: rgba(226,226,226,0.8);
+    height : calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.rightPane {
+    flex: 2;
+    display: flex;
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(0,107,217);
+    border-radius: 3.5px;
+    color: white;
+    padding: 5px;
+    border: 0.1em solid snow;
+    /* transition: all 0.3s ease; */
+}
+
+
+button:disabled{
+    background-color: cadetblue;
+}
+
+.input{
+    padding: 5px;
+    border: 0.2px solid gray;
+}
+
+#srchQuestion {
+    width : 60%;
+}
+
+h3 {
+    color: rgb(0,128,128);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+h1,h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.addResponseForm > button
+{
+  float: right;
+  margin-top: 10px;
+}
+
+.showQuestionContainer > *{
+    margin: 10px;
+}
+
+.quesHeader > button {
+    float : right;
+}
+
+
+.addResponseForm > input {
+    margin-bottom: 10px;
+}
+
+#nameOfResponder {
+    width: 30%;
+}
+
+.addResponseForm > textarea {
+    width: 99%;
+}
+
+.createQuestionContainer
+{
+  width: 99%;
+  /* display: none; */
+}
+
+.createQuestionContainer > input
+{
+    /* margin : top right bottom left */
+  margin: 10px 0px 5px 0px;
+  display: block;
+  width: 40%;
+}
+
+.createQuestionContainer > textarea
+{
+  width: 99%;
+}
+
+.createQuestionContainer > button
+{
+  float: right;
+  margin-top: 10px;
+}
+
+.questionBanner {
+    background: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.qTitle {
+    color: rgb(0,128,128);
+    padding: 5px;
+    font-size: 22pt; 
+}
+
+.voteControls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.qContent {
+    font-size: small;
+    padding: 5px;
+}
+
+.noquestion {
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
+
+.noresponse{
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
+
+.banner {
+    background: rgba(226,226,226,0.8);
+    border-bottom :0.2px solid gray;
+    padding: 5px;
+    margin: 2px;
+}
+
+
+#quesBanner {
+    border: none;
+}
+
+.showQuestionContainer {
+    display: none;
+    width: 99%;
+}
+
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow : inset 0 0 2px rgba(0,0,0,0.3);
+    box-shadow: inset;
+    border-radius: 10px;
+    background-color: rgba(247,243,243,0);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(177,174,174,0.8);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: rgba(92,90,90,0.5);
+}
