@@ -15,8 +15,13 @@ let allAnswerMap = initStorage(LOCAL_ANS_KEY)
 function loadQuestionsOnLoad()
 {
     let noQSpan = document.getElementById('noquestions')
+    allQuestionsMap.forEach(e => {
+        console.log(e)
+        if(!e.isResolved)
+            addToLeftPane(e)
+    })
 
-    if (allQuestionsMap.size == 0 && allQuestions.childElementCount == 1) {
+    if (allQuestionsMap.size == 0 || allQuestions.childElementCount == 1) {
         noQSpan.style.display = "block"
         allQuestions.style['justify-content'] = 'space-around'
         return;
@@ -24,9 +29,6 @@ function loadQuestionsOnLoad()
     else{
         noQSpan.style.display = "none"
     }
-    allQuestionsMap.forEach(e => {
-        addToLeftPane(e)
-    })
     document.querySelector('.showQuestionContainer').style['display'] = "none"
 
 }
