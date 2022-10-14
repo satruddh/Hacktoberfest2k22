@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Tanker", sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+    background-color: #212121;
+    text-align:center;
+    font-size: 2em;
+    color: rgb(255, 252, 218);
+    padding: 1rem;
+}
+main{
+    display:flex;
+    justify-content:center;
+    padding: 1em;
+}
+.form-container{
+    padding-top: 1rem;
+}
+
+.container label{
+    font-size: 1em;
+    text-align:left;
+}
+.form-container input{
+    padding: 1em;
+    width: 26rem;
+}
+.submit-container{
+    display:flex;
+    justify-content: end;
+}
+.submit-container input, .button{
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 0.5rem;
+    transition: .2s ease-in-out;
+}
+.submit-container input:hover, .button:hover{
+    background-color: #212121;
+    color:white;
+}   
+.telah-dibaca h2{
+    padding-top:2rem;
+}
+.container-buku{
+    padding-top: 2rem;
+}
+.check input{
+    margin-left: 1rem; 
+}
