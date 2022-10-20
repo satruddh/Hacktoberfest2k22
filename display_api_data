@@ -1,0 +1,66 @@
+import React, { useEffect, useState } from 'react'
+
+function App1() {
+  const [data,setData]= useState([]);
+  useEffect(() =>{
+    fetch("https://jsonplaceholder.typicode.com/users").then((api_data)=> api_data.json()).then((data) =>{
+      setData(data);
+    }).catch((api_error) =>{
+      alert("Error!");
+    })
+  },[])
+  return (
+    <div className='container text-center'>
+      <h1 className='display-4'>List of all products</h1>
+      <table className='table table-bordered'>
+      <tr>
+        <th rowSpan={3}>ID</th>
+        <th rowSpan={3}>Name</th>
+        <th rowSpan={3}>Username</th>
+        <th rowSpan={3}>E-mail</th>
+        <th colSpan={6}>Address</th>
+        <th rowSpan={3}>Phone</th>
+        <th rowSpan={3}>Website</th>
+        <th colSpan={3}>Company</th>
+      </tr>
+      <tr>
+        <th rowSpan={2}>Street</th>
+        <th rowSpan={2}>Suite</th>
+        <th rowSpan={2}>Street</th>
+        <th rowSpan={2}>Zipcode</th>
+        <th colSpan={2}>Location</th>
+        <th rowSpan={2}>Name</th>
+        <th rowSpan={2}>Catch Phrase</th>
+        <th rowSpan={2}>Basic Services</th>
+      </tr>
+      <tr>
+        <th>Latitude</th>
+        <th>Longitude</th>
+      </tr>
+      {
+        data.map((ecomm) =>(
+          <tr>
+            <td>{ecomm.id}</td>
+            <td>{ecomm.name}</td>
+            <td>{ecomm.username}</td>
+            <td>{ecomm.email}</td>
+            <td>{ecomm.address.street}</td>
+            <td>{ecomm.address.suite}</td>
+            <td>{ecomm.address.city}</td>
+            <td>{ecomm.address.zipcode}</td>
+            <td>{ecomm.address.geo.lat}</td>
+            <td>{ecomm.address.geo.lng}</td>
+            <td>{ecomm.phone}</td>
+            <td>{ecomm.website}</td>
+            <td>{ecomm.company.name}</td>
+            <td>{ecomm.company.catchPhrase}</td>
+            <td>{ecomm.company.bs}</td>
+          </tr>
+        ))
+      }
+      </table>
+    </div>
+  )
+}
+
+export default App1
