@@ -1,0 +1,106 @@
+.featured{
+    height : 500px;
+    margin-bottom: 20px;
+    
+}
+
+img.featured{
+    
+    max-height: 40px;
+    object-fit:fill;
+}
+
+.contents{
+ width: 35rem;
+ position: absolute; 
+ left:50px;
+ top: 200px;
+ color: white;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button{
+    cursor :pointer;
+    padding: 4px 18px;
+    margin-left:5px;
+    border:none;
+    display: flex;
+    border-radius: 5px;
+    background-color:#fff;
+    opacity: 0.8 ;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+   
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.desc{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.faded{
+   
+    position: absolute;
+    top: 400px;
+    height:100px;
+    width:100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent, 
+        rgba(37,37,37,.61),
+        #111
+    );
+
+}
+@media only screen and (max-width: 480px){
+    .featured{
+        height: 500px;
+    }
+    
+    .contents {
+        width: 340px;
+        position: absolute;
+        left: 30px;
+        top: 200px;
+        color: white;
+    }
+
+    .faded {
+    
+        position: absolute;
+        top: 430px;
+        height: 70px;
+        width: 100%;
+    
+    }
+    .desc {
+        font-size: 0.7rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+
+    button{
+        width: 55px;
+        height: 25px;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+}

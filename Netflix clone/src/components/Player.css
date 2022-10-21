@@ -1,0 +1,63 @@
+.Player{
+    display: flex;
+    background-color: rgba(37,37,37,0.9);
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Player-inner{
+    background-color: #111;
+    width: 800px;
+    height: 500px;
+}
+
+.video_player{
+    width: 800px;
+    height: 500px;
+    padding:50px;
+    
+}
+
+.close-btn{
+    width:100%;
+}
+.close{
+    margin-right: 10px;
+    margin-top: 10px;
+    height:40px;
+    width: 40px;
+    float: right;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Player-inner 
+    {
+        width: 100%;
+        height: 250px;
+    }
+
+    .close {
+        margin-right: 5px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+        float: right;
+    }
+
+    .video_player {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+    }
+}
+
+
