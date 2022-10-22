@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatZap</title>
+    <!-- ==============ICONSCOUT================= CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ===================STYLE SHEET================== -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ------------------NAVBAR---------------- -->
+    <nav>
+      <div class="container">
+        <h2 class="log">CHATZAP</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"> </i>
+          <input
+            type="search"
+            placeholder="Search for Creators,inspiration,and projects"
+          />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+
+          <div class="profile-photo">
+            <img src="./images/profile-2.jpg" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------MAIN---------- -->
+
+    <main>
+      <div class="container">
+        <!-- =================LEFT=============== -->
+        <div class="left">
+          <a href="" class="profile">
+            <div class="profile-photo">
+              <img src="./images/profile-2.jpg" alt="profile" />
+            </div>
+            <div class="handle">
+              <h4>Abhishek Yadav</h4>
+              <p class="text-muted">@abhiyadav2345</p>
+            </div>
+          </a>
+
+          <!-- ===========SIDEBAR============= -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
+              <h3>Explore</h3>
+            </a>
+
+            <a class="menu-item" id="notifications">
+              <span
+                ><i class="uil uil-bell"
+                  ><small class="notification-count">8+</small></i
+                ></span
+              >
+              <h3>Notifications</h3>
+
+              <!-- -----------------NOTIFICATION POPUP--------------- -->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Vipin Singh</b> accepted your friend request
+                    <small class="text-muted">2 SEC AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-3.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Abhishek Yadav</b> accepted your friend request
+                    <small class="text-muted">30 MIN AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-4.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Vipin Yadav</b> accepted your friend request
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-5.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Karan Singh</b> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-6.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Rahul Pandit</b> and <b>345 others</b> liked your post
+                    <small class="text-muted">5 HOUR AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-7.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Sachin Yadav</b> commented on a post you are tagged
+                    <small class="text-muted">4 DAYS AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-6.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Shiwani</b> accepted your friend request
+                    <small class="text-muted">5 DAYS AGO</small>
+                  </div>
+                </div>
+              </div>
+              <!-- ---------END OF NOTIFICATION POPUP------------ -->
+            </a>
+
+            <a class="menu-item" id="messages-notifications">
+              <span
+                ><i class="uil uil-envelope">
+                  <small class="notification-count">6</small></i
+                ></span
+              >
+              <h3>Message</h3>
+            </a>
+
+            <a class="menu-item">
+            <span><i class="uil uil-bookmark">
+
+            </i>
+            </span>
+              <h3>Bookmarks</h3>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
+              <h3>Analytics</h3>
+            </a>
+
+            <a class="menu-item" id="theme">
+              <span><i class="uil uil-palette"></i></span>
+              <h3>Theme</h3>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
+              <h3>Setting</h3>
+            </a>
+          </div>
+          <!-- --------END OF SIDEBAR--------- -->
+
+          <label class="btn btn-primary" for="create-post">Create Post</label>
+        </div>
+
+        <!-- =============MIDDLE==========   -->
+
+        <div class="middle">
+          <!-- =========STORIES================= -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-2.jpg" alt="" />
+              </div>
+              <p class="name">Abhishek Yadav</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-3.jpg" alt="" />
+              </div>
+              <p class="name">Karan Singh</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-4.jpg" alt="" />
+              </div>
+              <p class="name">Rahul Pandit</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-5.jpg" alt="" />
+              </div>
+              <p class="name">Vipin Yadav</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-6.jpg" alt="" />
+              </div>
+              <p class="name">Sachin</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-photo">
+                <img src="./images/profile-7.jpg" alt="" />
+              </div>
+              <p class="name">Shiwani</p>
+            </div>
+          </div>
+
+          <!-- ========END OF STORIES======== -->
+
+          <form class="create-post">
+            <div class="profile-photo">
+              <img src="./images/profile-2.jpg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="What's on your mind, Abhishek Yadav?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!-- ----------------FEED------------------- -->
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Abhishek Yadav</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-2.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-3.jpg">
+                </span>
+                <span>
+                  <img src="./images/profile-4.jpg" >
+                </span>
+                <span>
+                  <img src="./images/profile-5.jpg" >
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-3.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Rahul</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-3.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-4.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-7.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-6.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b>Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-4.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Vipin</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-4.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-5.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-6.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-3.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-5.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Harsh</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-1.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-5.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-3.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-6.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Shalini</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/profile-6.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-3.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-4.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-7.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-7.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Aman</h3>
+                    <small>India, 5 HOUR AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/profile-7.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-4.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-7.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="./images/profile-5.jpg" alt="" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Pratik</h3>
+                    <small>India, 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="./images/feed-1.jpg" alt="" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i> </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./images/profile-2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-7.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="./images/profile-6.jpg" alt="" />
+                </span>
+                <p>Liked by <b>Karan Singh</b> and <b>34 others </b></p>
+              </div>
+
+              <div class="caption">
+                <p>
+                  <b>Lana Rose </b> Lorem ipsum is placeholder text commonly.
+                  <span class="hash-tag">#WebDevelopment</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 27 comments</div>
+            </div>
+          </div>
+          <!-- ------------------END OF FEED------------- -->
+        </div>
+        <!-- =========END of MIDDLE========== -->
+
+        <!-- ==========RIGHT============= -->
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>messages</h4>
+              <i class="uil uil-edit"></i>
+            </div>
+            <!-- -------SEARCH BAR---------- -->
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input
+                type="seacrh"
+                placeholder="Search messages"
+                id="message-search"
+              />
+            </div>
+            <!-- ----------------------------MESSAGES CATEGORY-------------------------------- -->
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6>Requests(7)</h6>
+            </div>
+
+            <!-- -----------------------------------MESSAGE----------------------------------- -->
+            <div class="message">
+              <div class="profile-photo">
+                <img src="./images/feed-1.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="chat">
+                <h5>Vipin</h5>
+                <p class="text-bold">2 new messages</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="./images/feed-2.jpg" alt="" />
+              </div>
+              <div class="chat">
+                <h5>Rahul</h5>
+                <p class="text-muted">Hi!</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="./images/profile-1.jpg" alt="" />
+              </div>
+              <div class="chat">
+                <h5>Aman</h5>
+                <p class="text-bold">5 new messages</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="./images/feed-2.jpg" alt="" />
+                <div class="active"></div>
+              </div>
+              <div class="chat">
+                <h5>Karan Singh</h5>
+                <p class="text-muted">how are you ?</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="./images/feed-1.jpg" alt="" />
+              </div>
+              <div class="chat">
+                <h5>Sachin</h5>
+                <p class="text-muted">Where are you bruh.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- END OF MESSAGES -->
+
+          <!-- FRIEND REQUESTS -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-2.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Shalini</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-3.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Prakash</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-4.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Raman</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-5.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Yogesh</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-6.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Ayush</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-photo">
+                  <img src="./images/profile-3.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Yash</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <!-- END OF FRIEND REQUEST -->
+          </div>
+        </div>
+        <!-- =========END of RIGHT========== -->
+      </div>
+    </main>
+
+    <!--=======================================THEME CUSTOMIZATION========================  -->
+
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Customize your view</h2>
+        <p>Manage your font size ,color,and background.</p>
+        <!-- ======================FONT SIZE===================== -->
+
+        <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1 "></span>
+              <span class="font-size-2 "></span>
+              <span class="font-size-3 active"></span>
+              <span class="font-size-4 "></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+
+        <!-- ==========================PRIMARY COLORS========================== -->
+        <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+            <span class="color-1  active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+
+        <!-- ======================BACKGROUND COLORS======================= -->
+        <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg ">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights Out</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
